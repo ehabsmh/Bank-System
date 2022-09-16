@@ -476,6 +476,7 @@ const loanTransfer = function (e) {
     inputLoan.value = "";
   }
 };
+btnLoan.addEventListener("click", loanTransfer);
 
 const backToLandingPage = function () {
   landingPage.classList.remove("d-none");

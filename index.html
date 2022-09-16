@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bankist</title>
+    <link rel="shortcut icon" type="image/png" href="/icon.png" />
+
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&amp;display=swap"
       rel="stylesheet"
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <title>Bankist</title>
   </head>
   <body>
     <!------------------ S T A R T   M A I N   N A V B A R ------------------>
@@ -191,9 +193,9 @@
                 </div>
                 <h3 class="h5 mb-4">100% digital bank</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-                  alias sint quos? Accusantium a fugiat porro reiciendis saepe
-                  quibusdam debitis ducimus.
+                  login and check your movements and summary, even you can
+                  transfer money to somebody or loan cash also you can delete
+                  your own account..
                 </p>
               </figcaption>
             </div>
@@ -267,13 +269,13 @@
                 class="btn_operation-tab operations_tab--2 btn rounded-pill ms-4"
                 data-tab="2"
               >
-                <span>02</span> Instant Transfers
+                <span>02</span> Instant Loan
               </button>
               <button
                 class="btn_operation-tab operations_tab--3 btn rounded-pill ms-4"
                 data-tab="3"
               >
-                <span>03</span> Instant Transfers
+                <span>03</span> Delete Account
               </button>
             </div>
 
@@ -634,9 +636,8 @@
                     </div>
                     <div class="col-md-5">
                       <input
-                        type="password"
+                        type="number"
                         id="amount-transfer"
-                        maxlength="4"
                         class="form-control transfer--amount"
                       />
                       <label for="amount-transfer">Amount</label>
@@ -653,7 +654,7 @@
                   <div class="row text-center">
                     <div class="col-md-5">
                       <input
-                        type="text"
+                        type="number"
                         id="amount-loan"
                         class="form-control loan--amount"
                       />
