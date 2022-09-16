@@ -345,8 +345,12 @@ setTimeout(() => {
 btnMinimizeFormHint.addEventListener("click", function () {
   formHint.classList.toggle("opacity-25");
 });
+
 btnCloseFormHint.addEventListener("click", function () {
   formHint.classList.add("opacity-0");
+  setTimeout(() => {
+    formHint.classList.add("d-none");
+  }, 2000);
 });
 
 const getUsername = function () {

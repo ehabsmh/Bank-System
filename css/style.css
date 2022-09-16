@@ -86,7 +86,7 @@ li {
   top: 1rem;
   left: 100%;
   width: 100%;
-  padding: 1.4rem;
+  padding: 1.2rem;
   border-radius: 5px;
   transition: 1s all;
   background-color: rgba(0, 0, 0, 0.7);
@@ -98,13 +98,14 @@ li {
   position: absolute;
 }
 .nav--1 .form-hint .minimize_form--hint {
-  top: -10px;
-  right: 10px;
+  top: -19px;
+  right: 28px;
+  font-size: 2.5rem !important;
 }
 .nav--1 .form-hint .close_form--hint {
-  top: -10px;
-  right: -10px;
-  font-size: 4rem;
+  right: -13px;
+  top: -25px;
+  font-size: 3.5rem !important;
 }
 .nav--1 .form-hint .manipulate_form {
   position: absolute;
@@ -153,6 +154,12 @@ li {
   z-index: 11;
 }
 
+@media screen and (max-width: 767px) {
+  .form-hint {
+    top: 4rem !important;
+    left: 0 !important;
+  }
+}
 @media screen and (max-width: 575px) {
   .nav--1 img {
     margin-left: 30px;
