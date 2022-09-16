@@ -245,6 +245,7 @@ allSections.forEach((section) => {
 const lazyLoad = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
+  console.log(entries);
   entry.target.src = entry.target.dataset.src;
   entry.target.addEventListener("load", function () {
     entry.target.classList.remove("lazy-img");
@@ -252,9 +253,9 @@ const lazyLoad = function (entries, observer) {
   });
 };
 const imgsObserver = new IntersectionObserver(lazyLoad, {
-  root: null,
-  threshold: 0,
-  rootMargin: "-200px",
+  // root: null,
+  threshold: 0.3,
+  // rootMargin: "-200px",
 });
 
 allImgs.forEach((img) => {
